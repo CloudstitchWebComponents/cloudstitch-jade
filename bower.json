@@ -13,7 +13,7 @@
   ],
   "main": "cloudstitch-jade.html",
   "license": "BSD",
-  "homepage": "https://github.com/CloudstitchWebComponents/cloudstitch-jade/",
+  "homepage": "https://github.com/CloudstitchWebComponents/cloudstitch-jade",
   "ignore": [
     "/.*",
     "/test/"
