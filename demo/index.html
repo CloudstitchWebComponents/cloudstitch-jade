@@ -11,9 +11,10 @@
 
     <p>An example of <code>&lt;cloudstitch-jade&gt;</code>:</p>
 
-    <cloudstitch-jade user="ted" app="stack-in-a-box-13">
-      <%= Sheet1[0].Special %>
-    </cloudstitch-jade>
+<cloudstitch-jade user="ted" app="stack-in-a-box-13">
+each row in Sheet1
+  p=row.Special
+</cloudstitch-jade>
 
   </body>
 </html>

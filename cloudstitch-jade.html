@@ -139,7 +139,7 @@ Example:
 
       // Render and fill the template
       try { 
-        var rendered = ejs.render(this.$.box.template, data, this.options);
+        var rendered = jade.compile(this.$.box.template)(data);
         Polymer.dom(this.$.template).innerHTML = rendered;        
       } catch(e) {
         console.log(e);
@@ -147,7 +147,7 @@ Example:
 
       // Also render the content element
       try {
-        var rendered2 = ejs.render(this.$.inlined.innerText, data, this.options);
+        var rendered2 = jade.compile(this.$.inlined.innerHTML)(data);
         Polymer.dom(this.$.inlined).innerHTML = rendered2;
       } catch(e) {
         console.log(e);
